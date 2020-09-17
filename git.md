@@ -94,3 +94,12 @@ git remote set-branches --add origin dev
 git fetch origin dev
 git merge dev
 ```
+
+
+## Remove large file committed by accident
+
+```
+git filter-branch --force --index-filter \
+  'git rm --cached --ignore-unmatch path/to/file.tif' \
+  --prune-empty --tag-name-filter cat -- --all
+```
