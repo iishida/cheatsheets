@@ -103,3 +103,9 @@ git filter-branch --force --index-filter \
   'git rm --cached --ignore-unmatch path/to/file.tif' \
   --prune-empty --tag-name-filter cat -- --all
 ```
+
+## Delete .DS_store files or other undesirables
+
+```
+find . -name ".DS_Store" -delete
+```
