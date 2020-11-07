@@ -109,3 +109,9 @@ git filter-branch --force --index-filter \
 ```
 find . -name ".DS_Store" -delete
 ```
+
+## Pull multiple repositories from one level above
+
+```
+find . -mindepth 1 -maxdepth 1 -type d -print -exec git -C {} pull \;
+```
