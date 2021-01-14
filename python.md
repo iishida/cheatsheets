@@ -135,3 +135,10 @@ import matplotlib.pyplot as plt
 # Ignore "too many figures open" warning
 plt.rcParams.update({'figure.max_open_warning': 0})
 ```
+
+
+## Export conda environment
+
+```bash
+conda env export > environment.yml
+```
