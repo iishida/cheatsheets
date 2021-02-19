@@ -138,7 +138,7 @@ plt.rcParams.update({'figure.max_open_warning': 0})
 
 ## Make matplotlib font settings compatible with PDF
 
-# from http://phyletica.org/matplotlib-fonts/
+### from http://phyletica.org/matplotlib-fonts/
 ```python
 import matplotlib
 matplotlib.rcParams['pdf.fonttype'] = 42
