@@ -136,9 +136,19 @@ import matplotlib.pyplot as plt
 plt.rcParams.update({'figure.max_open_warning': 0})
 ```
 
+## Make matplotlib font settings compatible with PDF
+
+# from http://phyletica.org/matplotlib-fonts/
+```python
+import matplotlib
+matplotlib.rcParams['pdf.fonttype'] = 42
+matplotlib.rcParams['ps.fonttype'] = 42
+```
+
 
 ## Export conda environment
 
 ```bash
 conda env export > environment.yml
 ```
+
