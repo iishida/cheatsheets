@@ -29,3 +29,10 @@ Need to start the notebook with this:
 ```
 jupyter notebook --NotebookApp.iopub_data_rate_limit=1000000000
 ```
+
+## Add conda env to jupyter kernel
+
+```bash
+conda activate myenv
+ipython kernel install --user --name=myenv
+```
