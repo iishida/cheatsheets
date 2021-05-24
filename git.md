@@ -95,6 +95,10 @@ git fetch origin dev
 git merge dev
 ```
 
+## Switch to remote branch
+```
+git switch <branch_name>
+```
 
 ## Remove large file committed by accident
 
@@ -109,6 +113,7 @@ git filter-branch --force --index-filter \
 ```
 find . -name ".DS_Store" -delete
 ```
+
 
 ## Pull multiple repositories from one level above
 
